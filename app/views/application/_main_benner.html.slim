@@ -1,0 +1,31 @@
+.main-benner-wrap
+  .svg-bg.medium.top-to-bottom style="background-image: url(#{asset_path('svg/cirles.svg')})"
+  .img-bg.right-to-left style="background-image: url(#{asset_path('photo/head_bg.png')})"
+
+  .header-box
+    .logo.fadeIn = inline_svg "svg/logo.svg"
+    .language-box.fadeIn
+      select placeholder="вибір мови"
+        option data-display="" УКР
+        option value="1" ENG
+        option value="2" РУС
+
+    / .hamburger.menu-button
+    /   .hamburger-box
+    /     .hamburger-inner
+            
+  .row
+    .columns.large-6
+      .content-banner
+        .head-title-box.left-to-right
+          .head-title.blue-text-gradient шопінг
+          .head-title.orange-text-gradient в польші
+          .sub-title без податку VAT!
+
+        p.left-to-right2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perspiciatis, voluptatibus sequi deserunt maiores, nam distinctio aliquid possimus nesciunt voluptates atque consequuntur labore incidunt et fuga facere eius magni minima!
+          
+        .button.blue-bg-gradient.with-shadow.popup-btn.fadeBtn data-btn-attr="order-form"
+          span замовити консультацію
+
+
+  .bottom-scroll-arrow.desktop.right-to-left = inline_svg "svg/arrows-test.svg"

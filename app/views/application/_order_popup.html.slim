@@ -1,0 +1,28 @@
+.popup-wrapper data-form-attr="order-form"
+  .close-popup = inline_svg "svg/close-orange.svg"
+  .form-box.orange-bg-gradient
+    .title Замовлення консультації
+    .sub-title 
+      |Заповніть будьласка форму і наш
+      br
+      | менеджер зв`яжеться з вами
+    form
+      .input-field
+        input#name name="name"
+        label Ваше імя
+        span.bar
+      .input-field
+        input#number name="number"
+        label Ваш номер телефону
+        span.bar
+      .input-field
+        input#mail name="mail"
+        label Електронна адреса
+        span.bar
+      .input-field
+        textarea#massage rows="1" name="massage"
+        label Ваше повідомлення
+        span.bar
+
+      button.button.with-shadow
+        span замовити

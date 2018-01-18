@@ -1,0 +1,90 @@
+.main-benner-wrap
+  position: relative
+  height: 100vh
+  .svg-bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+    height: 100% 
+    background-repeat: no-repeat
+  .img-bg
+    width: 60%
+    left: initial
+    +breakpoint(medium down)
+      width: 100%
+      position: relative
+      height: 60%
+      top: initial
+      +translate(0,0)
+  .header-box
+    +clearfix
+    position: absolute
+    top: 50px
+    left: 0
+    right: 0
+    padding: 0 50px 
+    .logo
+      float: left
+      width: 100px
+    .language-box
+      float: right
+
+    .hamburger
+      +breakpoint(medium up)
+        display: none
+
+    +breakpoint(medium down)
+      top: 20px
+      padding: 0 10px
+
+  .columns
+    position: relative
+    height: 100vh
+    +breakpoint(medium down)
+      height: initial
+  .content-banner
+    +y-align
+    width: 750px
+    max-width: 100%
+    .head-title-box
+      opacity: 0
+      +translate(-100%, -50%)
+      .head-title
+        +breakpoint(xxlarge up)
+          font-size: 90px
+        font-size: 70px
+        font-weight: 900
+        line-height: 0.9
+      .sub-title
+        font-size: 30px
+        font-weight: 600
+
+      +breakpoint(small only)
+        .head-title
+          font-size: 40px
+        .sub-title
+          font-size: 22px
+    p
+      +translate(-100%,-50%)
+      padding: 85px 0 0
+      opacity: 0
+
+ 
+    .button
+      padding: 15px 50px 
+       
+  
+    +breakpoint(medium down)
+      position: relative
+      width: 100%
+      margin-bottom: 50px
+      top: initial
+      +translate(0,0)
+
+  .bottom-scroll-arrow
+    cursor: pointer
+    +x-align
+    bottom: 20px
+    width: 70px
+    height: 70px

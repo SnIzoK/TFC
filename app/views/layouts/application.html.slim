@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    / = seo_tags
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    = stylesheet_link_tag    "application", media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .main-wrapper
+      = yield
+    = render "order_popup"
+    = render "popup_be_partner"
+    = render "footer"
+    = javascript_include_tag "application", 'data-turbolinks-track' => true
